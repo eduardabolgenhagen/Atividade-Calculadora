@@ -1,6 +1,7 @@
 .buttonsSelect{
     border: solid 1px black;
-    padding: 3px;
-    display: flex;
-    align-items: flex-start;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 3px;
+    background-color: brown;
 }

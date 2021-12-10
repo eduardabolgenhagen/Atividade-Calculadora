@@ -7,7 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculadoraComponent implements OnInit {
 
+  calculo = "";
+  
   constructor() { }
+
+  receberValor(e){
+    this.calculo += e.valor;
+    console.log(this.calculo)
+  }
+
+  resultado(){
+    this.calculo = eval(this.calculo);
+  }
+
+  limparTudo(){
+    this.calculo = "";
+  }
 
   ngOnInit() {
   }
